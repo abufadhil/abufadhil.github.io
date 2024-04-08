@@ -21,7 +21,7 @@
 
         <hr>
 
-        <canvas id="canvas-gambar" class="img-fluid text-center" width="6000" height="6000"></canvas>
+        <canvas id="canvas-gambar" class="img-fluid text-center" width="1080" height="2200"></canvas>
 
         <hr>
 
@@ -67,10 +67,10 @@
             var context = canvas.getContext("2d");
             //context.clearRect(0, 0, 4000, 3000);
             context.clearRect(0, 0, 1080, 1080);
-            var fontsize = 70;
+            var fontsize = 40;
 
-            if (name.length > 100) {
-                fontsize = 70 - (name.length - 100);
+            if (name.length > 24) {
+                fontsize = 40 - (name.length - 24);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -99,7 +99,7 @@
                 context.font = "bold 40px hpsimplified";
                 context.fillStyle = "#ffffff";
                 context.textAlign = "center";
-                context.fillText("~ SD IT As Sunnah ~",500,500);
+                context.fillText("~ SD IT As Sunnah ~", 550, 1250);
 
             };
 
