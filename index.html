@@ -67,10 +67,10 @@
             var context = canvas.getContext("2d");
             //context.clearRect(0, 0, 4000, 3000);
             context.clearRect(0, 0, 1080, 1080);
-            var fontsize = 40;
+            var fontsize = 80;
 
             if (name.length > 24) {
-                fontsize = 40 - (name.length - 24);
+                fontsize = 80 - (name.length - 24);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -96,10 +96,10 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 40px hpsimplified";
+                context.font = "bold 80px hpsimplified";
                 context.fillStyle = "#ffffff";
                 context.textAlign = "center";
-                context.fillText("~ SD IT  Sunnah ~", 550, 2450);
+                context.fillText("~ SD IT  Sunnah ~", 650, 2450);
 
             };
 
