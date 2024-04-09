@@ -67,10 +67,10 @@
             var context = canvas.getContext("2d");
             //context.clearRect(0, 0, 4000, 3000);
             context.clearRect(0, 0,1080, 1080);
-            var fontsize = 200;
+            var fontsize = 150;
 
             if (name.length > 24) {
-                fontsize = 200 - (name.length - 24);
+                fontsize = 150 - (name.length - 24);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -96,7 +96,7 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 200px hpsimplified";
+                context.font = "bold 150px hpsimplified";
                 context.fillStyle = "#ffffff";
                 context.textAlign = "center";
                 context.fillText("~ SD IT As Sunnah ~", 3080, 2080);
