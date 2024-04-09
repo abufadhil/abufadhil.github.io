@@ -66,8 +66,8 @@
             var canvas = document.getElementById("canvas-gambar");
             var context = canvas.getContext("2d");
             //context.clearRect(0, 0, 4000, 3000);
-            context.clearRect(0, 0,580, 580);
-            var fontsize = 40;
+            context.clearRect(0, 0,1080, 1080);
+            var fontsize = 200;
 
             if (name.length > 24) {
                 fontsize = 200 - (name.length - 24);
@@ -96,7 +96,7 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 40px hpsimplified";
+                context.font = "bold 200px hpsimplified";
                 context.fillStyle = "#ffffff";
                 context.textAlign = "center";
                 context.fillText("~ SD IT As Sunnah ~", 550, 1250);
