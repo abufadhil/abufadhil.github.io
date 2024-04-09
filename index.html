@@ -16,12 +16,12 @@
 <body class="bg-secondary">
     <div class="container text-white">
         <div class="title text-center mt-5">
-            <span>Kartu Idul Fitri <b>SD IT As Sunnah</b></span>
+            <span>Kartu Idul Adha <b>Yayasan Ibnu Shulhan</b></span>
         </div>
 
         <hr>
 
-        <canvas id="canvas-gambar" class="img-fluid text-center" width="4000" height="5590"></canvas>
+        <canvas id="canvas-gambar" class="img-fluid text-center" width="1080" height="2200"></canvas>
 
         <hr>
 
@@ -66,11 +66,11 @@
             var canvas = document.getElementById("canvas-gambar");
             var context = canvas.getContext("2d");
             //context.clearRect(0, 0, 4000, 3000);
-            context.clearRect(0, 0,1080, 1080);
-            var fontsize = 130;
+            context.clearRect(0, 0, 1080, 1080);
+            var fontsize = 40;
 
             if (name.length > 24) {
-                fontsize = 130 - (name.length - 24);
+                fontsize = 40 - (name.length - 24);
             }
             //alert(name.length);
             var imageObj = new Image();
@@ -79,14 +79,14 @@
                 context.drawImage(imageObj, 0, 0);
                 context.font = "bold "+ fontsize + "px hpsimplified";
                 context.fillStyle = "#ffffff";
-                context.textAlign = "bottom";
+                context.textAlign = "center";
                 context.fillText(res, 550, 1250);
 
                 
 
             };
 
-            imageObj.src = "img/Assunnah.jpg";
+            imageObj.src = "img/ibnushulhan.jpg";
         }
 
         window.onload = function () {
@@ -96,14 +96,14 @@
             imageObj.onload = function () {
                 //context.scale(0.15, 0.15);
                 context.drawImage(imageObj, 0, 0);
-                context.font = "bold 100x hpsimplified";
+                context.font = "bold 40px hpsimplified";
                 context.fillStyle = "#ffffff";
-                context.textAlign = "bottom";
-                context.fillText("~ SD IT As Sunnah ~", 550, 1250);
+                context.textAlign = "center";
+                context.fillText("~ Yayasan Ibnu Shulhan ~", 550, 1250);
 
             };
 
-            imageObj.src = "img/Assunnah.jpg";
+            imageObj.src = "img/ibnushulhan.jpg";
         };
     </script>
 </body>
